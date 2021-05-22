@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_cropper import st_cropper
+#from streamlit_cropper import st_cropper
 from PIL import Image, ImageDraw, ImageFont
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
