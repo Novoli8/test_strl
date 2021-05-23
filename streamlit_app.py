@@ -1,12 +1,8 @@
 import streamlit as st
-#from streamlit_cropper import st_cropper
 from PIL import Image, ImageDraw, ImageFont
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
-# Upload an image and set some options for demo purposes
-
-img_file = st.file_uploader(label='Upload a file', type=['png', 'jpg', 'webp'])
-
+img_file = st.file_uploader(label='Upload a file', type=['png', 'jpg'])
 a = st.text_input('Enter some text')
 
 if img_file and a:
@@ -31,8 +27,5 @@ if img_file and a:
     font = ImageFont.truetype("putches/Inter-Bold.ttf", size=23)
     idraw.text((236, 349), text,(0, 0, 0), font=font)
     img.paste(w4,(269, 354))
-
-    
-    
-
+        
     st.image(img)
