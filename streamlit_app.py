@@ -17,7 +17,7 @@ if img_file and a:
     w1 = Image.open('putches/water.png')
     w2 = Image.open('putches/waterline2.png')
     w3 = Image.open('putches/white.png')
-    w4 = Image.open('putches/thfn1.png')
+    w4 = Image.open('putches/thfn.png')
 
     img.paste(w1,(170, 353))
     img.paste(w2,(417, 353))
@@ -25,7 +25,7 @@ if img_file and a:
                 
     idraw = ImageDraw.Draw(img)
     font = ImageFont.truetype("putches/Inter-Bold.ttf", size=23)
-    idraw.text((236, 349), text,(0, 0, 0), font=font)
-    img.paste(w4,(269, 354))
+    idraw.text((246, 349), text,(0, 0, 0), font=font)
+    img.paste(w4,(262, 354))
         
     st.image(img)
