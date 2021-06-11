@@ -7,7 +7,7 @@ a = st.text_input('Enter some text')
 
 if img_file and a:
     if len(a) == 6:
-        text = (a[:2] + '          2564' + '         ' +  a[2:-2] + ':' + a [4:])
+        text = (a[:2] + '           2564' + '         ' +  a[2:-2] + ':' + a [4:])
     elif len(a) == 5:
         text = (a[:1] + '           2564' + '       ' +  a[1:-2] + ':' + a [3:])
     else:
