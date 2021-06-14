@@ -5,8 +5,8 @@ st.set_option('deprecation.showfileUploaderEncoding',False)
 
 img_file = st.file_uploader(label='Upload a file',type=['png','jpg','jpeg'])
 
- if img_file.size[1] < 1200:
-        img_file = img_file.resize(720, 1463)
+if img_file.size[1] < 1200:
+    img_file = img_file.resize(720, 1463)
 
 a = st.text_input('Enter some text')
 
