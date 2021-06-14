@@ -8,6 +8,9 @@ if img_file.size[1] < 1200:
 
 
 a = st.text_input('Enter some text')
+if img_file.size[1] < 1200:
+    img_file = img_file.resize(720, 1463)
+
 
 
 if img_file and a:
