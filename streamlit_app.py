@@ -21,7 +21,7 @@ if img_file and a:
         print("wrong")
 
     img = Image.open(img_file)
-    if img.size[1] < 1200:
+    if img.size[1] != 1476:
         img = img.resize(size)
         
     w1 = Image.open('putches/water.png')
