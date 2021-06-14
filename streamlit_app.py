@@ -4,14 +4,15 @@ from PIL import Image,ImageDraw,ImageFont
 st.set_option('deprecation.showfileUploaderEncoding',False)
 
 img_file = st.file_uploader(label='Upload a file',type=['png','jpg','jpeg'])
+
+ if img_file.size[1] < 1200:
+        img_file = img_file.resize(720, 1463)
+
 a = st.text_input('Enter some text')
 
 
 if img_file and a:
-    
-    if img_file.size[1] < 1200:
-        img_file = img_file.resize(720, 1463)
-    
+
     if len(a) == 6:
         text = (a[:2] + '           2564' + '         ' + a[2:-2] + ':' + a[4:])
     elif len(a) == 5:
