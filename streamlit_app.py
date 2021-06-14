@@ -6,7 +6,6 @@ img_file = st.file_uploader(label='Upload a file', type=['png', 'jpg', 'jpeg']
 a = st.text_input('Enter some text')
 
 
-
 if img_file and a:
     if len(a) == 6:
         text = (a[:2] + '           2564' + '         ' +  a[2:-2] + ':' + a [4:])
