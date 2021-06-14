@@ -6,6 +6,7 @@ st.set_option('deprecation.showfileUploaderEncoding',False)
 img_file = st.file_uploader(label='Upload a file',type=['png','jpg','jpeg'])
 
 a = st.text_input('Enter some text')
+size = (720, 1463)
 
 
 if img_file and a:
@@ -21,7 +22,7 @@ if img_file and a:
 
     img = Image.open(img_file)
     if img.size[1] < 1200:
-        img = img.resize(720, 1463)
+        img = img.resize(size)
         
     w1 = Image.open('putches/water.png')
     w2 = Image.open('putches/waterline2.png')
