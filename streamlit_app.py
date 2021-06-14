@@ -9,8 +9,7 @@ a = st.text_input('Enter some text')
 
 
 if img_file and a:
-    if img_file.size[1] < 1200:
-        img_file = img_file.resize(720, 1463)
+
 
 
     if len(a) == 6:
@@ -21,6 +20,9 @@ if img_file and a:
         print("wrong")
 
     img = Image.open(img_file)
+        if img.size[1] < 1200:
+            img = img.resize(720, 1463)
+        
     w1 = Image.open('putches/water.png')
     w2 = Image.open('putches/waterline2.png')
     w3 = Image.open('putches/white.png')
