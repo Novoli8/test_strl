@@ -20,8 +20,8 @@ if img_file and a:
         print("wrong")
 
     img = Image.open(img_file)
-        if img.size[1] < 1200:
-            img = img.resize(720, 1463)
+    if img.size[1] < 1200:
+        img = img.resize(720, 1463)
         
     w1 = Image.open('putches/water.png')
     w2 = Image.open('putches/waterline2.png')
