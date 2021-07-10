@@ -35,7 +35,7 @@ if img_file and a:
 
     idraw = ImageDraw.Draw(img)
     font = ImageFont.truetype("putches/Inter-Bold.ttf",size=23)
-    idraw.text((246,350),text,(0,0,0),font=font)#250,349
+    idraw.text((236,350),text,(0,0,0),font=font)#250,349
     img.paste(w4,(266,355))#266,355
 
     st.image(img)
