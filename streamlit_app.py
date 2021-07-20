@@ -24,7 +24,8 @@ if img_file and a:
     if img.size[1] != 1476:
         img = img.resize(size)
 
-    w1 = Image.open('putches/water.png')
+    w1 = Image.open('putches/IMG_20210720_175644_033.jpg'
+)
     w2 = Image.open('putches/waterline2.png')
     w3 = Image.open('putches/white.png')
     w4 = Image.open('putches/thfn2.png')
