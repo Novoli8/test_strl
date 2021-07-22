@@ -1,4 +1,4 @@
-#import streamlit as st
+import streamlit as st
 from PIL import Image,ImageDraw,ImageFont
 
 st.set_option('deprecation.showfileUploaderEncoding',False)
