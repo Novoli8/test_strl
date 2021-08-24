@@ -3,7 +3,7 @@ from PIL import Image,ImageDraw,ImageFont
 
 st.set_option('deprecation.showfileUploaderEncoding',False)
 
-img_file = st.file_uploader(label='Upload a file',type=['png','jpg','jpeg'])
+img_file = st.file_uploader(label='Upload a file',type=['png','jpg','jpeg','webp'])
 
 a = st.text_input('Enter some text')
 size = (720, 1463)
