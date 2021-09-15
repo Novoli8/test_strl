@@ -8,11 +8,8 @@ img_file = st.file_uploader(label='Upload a file',type=['png','jpg','jpeg','webp
 a = st.text_input('Enter some text')
 size = (720, 1463)
 
-
 if img_file and a:
-
-
-
+    
     if len(a) == 6:
         text = (a[:2] + '           2564' + '         ' + a[2:-2] + ':' + a[4:])
     elif len(a) == 5:
@@ -24,8 +21,7 @@ if img_file and a:
     if img.size[1] != 1476:
         img = img.resize(size)
 
-    w1 = Image.open('putches/water.png'
-)
+    w1 = Image.open('putches/water.png')
     w2 = Image.open('putches/waterline2.png')
     w3 = Image.open('putches/white.png')
     w4 = Image.open('putches/thfn3.png')
