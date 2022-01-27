@@ -24,7 +24,7 @@ if img_file and a:
     w1 = Image.open('putches/water.png')
     w2 = Image.open('putches/waterline2.png')
     w3 = Image.open('putches/white.png')
-    w4 = Image.open('putches/thfn4.png')
+    w4 = Image.open('putches/thfn5.jpg')
 
     img.paste(w1,(170,353))
     img.paste(w2,(417,353))
