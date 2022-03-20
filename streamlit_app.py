@@ -26,9 +26,9 @@ if img_file and a:
     w3 = Image.open('putches/white.png')
     w4 = Image.open('putches/tfpm6.jpg')
 
-    img.paste(w1,(170,353))
-    img.paste(w2,(417,353))
-    img.paste(w3,(268,352))
+    img.paste(w1,(170,357))
+    img.paste(w2,(417,357))
+    img.paste(w3,(268,356))
 
     idraw = ImageDraw.Draw(img)
     font = ImageFont.truetype("putches/Inter-Bold.ttf",size=23)#23
