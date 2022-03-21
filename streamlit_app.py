@@ -30,9 +30,9 @@ if img_file and a:
     img.paste(w2,(417,334))#417,339
     img.paste(w3,(268,333))#268,338
 
-    #idraw = ImageDraw.Draw(img)
+    idraw = ImageDraw.Draw(img)
     font = ImageFont.truetype("putches/Inter-Bold.ttf",size=23)#23
-    #idraw.text((235,349),text,(0,0,0),font=font)#250,349  , 235,336
-    #img.paste(w4,(266,355))#266,355  , 269,341
+    idraw.text((235,349),text,(0,0,0),font=font)#250,349  , 235,336
+    img.paste(w4,(266,355))#266,355  , 269,341
 
     st.image(img)
