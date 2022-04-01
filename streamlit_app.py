@@ -26,13 +26,13 @@ if img_file and a:
     w3 = Image.open('putches/white.png')
     w4 = Image.open('putches/thfn8.jpg')
 
-    img.paste(w1,(170,354))#170,340
-    img.paste(w2,(417,353))#417,339
-    img.paste(w3,(268,352))#268,338
+    img.paste(w1,(170,340))#170,340
+    img.paste(w2,(417,339))#417,339
+    img.paste(w3,(268,338))#268,338
 
     idraw = ImageDraw.Draw(img)
     font = ImageFont.truetype("putches/Inter-Bold.ttf",size=23)#23
-    idraw.text((250,349),text,(0,0,0),font=font)#250,349  , 235,336
-    img.paste(w4,(266,355))#266,355  , 269,341
+    idraw.text((250,336),text,(0,0,0),font=font)#250,349  , 235,336
+    img.paste(w4,(266,341))#266,355  , 269,341
 
     st.image(img)
