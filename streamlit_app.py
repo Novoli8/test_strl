@@ -28,7 +28,7 @@ if img_file and a:
 
     img.paste(w1,(170,340))#170,340
     img.paste(w2,(417,339))#417,339
-    #img.paste(w3,(268,338))#268,338
+    img.paste(w3,(268,358))#268,338
 
     idraw = ImageDraw.Draw(img)
     font = ImageFont.truetype("putches/Inter-Bold.ttf",size=23)#23
