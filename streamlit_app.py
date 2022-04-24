@@ -26,7 +26,7 @@ if img_file and a:
     w3 = Image.open('putches/white.png')
     w4 = Image.open('putches/thfn8.jpg')
 
-    img.paste(w1,(170,358))#170,340  170,356
+    img.paste(w1,(170,356))#170,340  170,356
     img.paste(w2,(427,355))#417,339  417,355
     img.paste(w3,(268,338))#268,338  268,352
 
