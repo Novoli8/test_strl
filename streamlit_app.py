@@ -27,7 +27,7 @@ if img_file and a:
     w4 = Image.open('putches/thfn8.jpg')
 
     img.paste(w1,(170,340))#170,340  170,356
-    img.paste(w2,(429,355))#417,339  417,355
+    img.paste(w2,(417,355))#417,339  417,355
     img.paste(w3,(268,338))#268,338  268,352
 
     idraw = ImageDraw.Draw(img)
