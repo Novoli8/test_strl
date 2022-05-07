@@ -3,7 +3,6 @@ import pytz
 from PIL import Image,ImageDraw,ImageFont
 from datetime import datetime
 
-
 st.set_option('deprecation.showfileUploaderEncoding',False)
 img_file = st.file_uploader(label='Upload a file',type=['png','jpg','jpeg','webp'])
 
@@ -13,8 +12,7 @@ tz = pytz.timezone('Asia/Bangkok')
 months = ('0',"ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค.")
 current_datetime = datetime.now(tz)
 mth = current_datetime.month
-yer = current_datetime.year
-year = yer + 543
+year = current_datetime.year + 543
 
 if img_file and a:
 
@@ -22,8 +20,6 @@ if img_file and a:
         text = (a[:2] +' '+ months[mth] + ' ' + str(year) + '     ' + a[2:-2] + ':' + a[4:])
     elif len(a) == 5:
         text = (a[:1] +' '+ months[mth] + ' ' + str(year) + '     ' + a[1:-2] + ':' + a[3:])
-    else:
-        print("wrong")
 
     img = Image.open(img_file)
     if img.size[1] != 1476:
