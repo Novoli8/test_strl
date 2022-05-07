@@ -13,13 +13,15 @@ tz = pytz.timezone('Asia/Bangkok')
 months = ('0',"ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค.")
 current_datetime = datetime.now(tz)
 mth = current_datetime.month
+yer = current_datetime.year
+year = yer + 543
 
 if img_file and a:
 
     if len(a) == 6:
-        text2 = (a[:2] +' '+ months[mth] +' 2565     ' + a[2:-2] + ':' + a[4:])
+        text = (a[:2] +' '+ months[mth] + ' ' + str(year) + '     ' + a[2:-2] + ':' + a[4:])
     elif len(a) == 5:
-        text2 = (a[:1] +' '+ months[mth] +' 2565     ' + a[1:-2] + ':' + a[3:])
+        text = (a[:1] +' '+ months[mth] + ' ' + str(year) + '     ' + a[1:-2] + ':' + a[3:])
     else:
         print("wrong")
 
@@ -37,6 +39,6 @@ if img_file and a:
 
     idraw = ImageDraw.Draw(img)
     font = ImageFont.truetype("putches/Noto Sans Thai UI Bold_new.ttf",size=23)#23
-    idraw.text((250,333),text2,(0,0,0),font=font)#250,349  , 235,336
+    idraw.text((250,333),text,(0,0,0),font=font)#250,349  , 235,336
 
     st.image(img)
