@@ -18,10 +18,10 @@ if img_file and a:
 
     if len(a) == 6:
         #text = (a[:2] +' '+ months[mth] + ' ' + str(year) + '     ' + a[2:-2] + ':' + a[4:])
-        text = f'{a[:2]} {months[mth]} {str(year)}     {a[2:-2]}:{a[4:]}'
+        text = f'{a[:2]} {months[mth]} {year}     {a[2:-2]}:{a[4:]}'
     elif len(a) == 5:
         #text = (a[:1] +' '+ months[mth] + ' ' + str(year) + '     ' + a[1:-2] + ':' + a[3:])
-        text = f'{a[:1]} {months[mth]} {str(year)}     {a[2:-2]}:{a[4:]}'
+        text = f'{a[:1]} {months[mth]} {year}     {a[2:-2]}:{a[4:]}'
 
     img = Image.open(img_file)
     if img.size[1] != 1476:
