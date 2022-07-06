@@ -11,16 +11,12 @@ size = (720, 1463)
 tz = pytz.timezone('Asia/Bangkok')
 months = ('0',"ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค.")
 current_datetime = datetime.now(tz)
+day = current_datetime.day
 mth = current_datetime.month
 year = current_datetime.year + 543
 
 if img_file and a:
-
-    if len(a) == 6:
-        text = f'{a[:2]} {months[mth]} {year}     {a[2:-2]}:{a[4:]}'
-    elif len(a) == 5:
-        text = f'{a[:1]} {months[mth]} {year}     {a[1:-2]}:{a[3:]}'
-
+    text = f'{day} {months[mth]} {year}     {a[:2]}:{a[2:]}'
     img = Image.open(img_file)
     if img.size[1] != 1476:
         img = img.resize(size)
