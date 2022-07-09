@@ -1,6 +1,6 @@
 import streamlit as st
 import pytz
-from PIL import Image,ImageDraw,ImageFont
+#from PIL import Image,ImageDraw,ImageFont
 from datetime import datetime
 
 st.set_option('deprecation.showfileUploaderEncoding',False)
