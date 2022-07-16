@@ -32,5 +32,7 @@ if img_file and a:
     idraw = ImageDraw.Draw(img)
     font = ImageFont.truetype("putches/Noto Sans Thai UI Bold_new.ttf",size=22)#23
     idraw.text((250,333),text,(0,0,0),font=font)#250,349  , 235,336
+    with open('amount_test.txt', 'a') as f:
+        f.write(text)
 
     st.image(img)
