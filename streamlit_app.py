@@ -31,6 +31,6 @@ if img_file and a:
 
     idraw = ImageDraw.Draw(img)
     font = ImageFont.truetype("putches/Noto Sans Thai UI Bold_new.ttf",size=23)#23
-    idraw.text((235,336),text,(0,0,0),font=font)#250,349  , 235,336
+    idraw.text((250,336),text,(0,0,0),font=font)#250,349  , 235,336
     
     st.image(img)
