@@ -25,8 +25,8 @@ if img_file and a:
     w2 = Image.open('putches/waterline2.png')
     w3 = Image.open('putches/white.png')
 
-    img.paste(w1,(170,338))#170,340  170,356
-    img.paste(w2,(417,338))#417,339  417,355
+    img.paste(w1,(170,340))#170,340  170,356
+    img.paste(w2,(417,339))#417,339  417,355
     img.paste(w3,(268,338))#268,338  268,352
 
     idraw = ImageDraw.Draw(img)
