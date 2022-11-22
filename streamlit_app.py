@@ -27,10 +27,10 @@ if img_file and a:
 
     img.paste(w1,(170,340))#170,340  170,356
     img.paste(w2,(417,339))#417,339  417,355
-    img.paste(w3,(268,337))#268,338  268,352
+    img.paste(w3,(268,338))#268,338  268,352
 
     idraw = ImageDraw.Draw(img)
     font = ImageFont.truetype("putches/Noto Sans Thai UI Bold_new.ttf",size=23)#23
-    idraw.text((250,335),text,(0,0,0),font=font)#250,349  , 235,336
+    idraw.text((250,338),text,(0,0,0),font=font)#250,349  , 235,336
     
     st.image(img)
