@@ -1,4 +1,4 @@
-import streamlit as stув
+import streamlit as st
 import pytz
 from PIL import Image,ImageDraw,ImageFont
 from datetime import datetime
