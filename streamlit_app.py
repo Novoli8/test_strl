@@ -26,8 +26,8 @@ if img_file and a:
     w3 = Image.open('putches/white.png')
 
     img.paste(w1,(170,336))#170,340  170,356
-    img.paste(w2,(427,335))#417,339  417,355
-    img.paste(w3,(268,336))#268,338  268,352
+    img.paste(w2,(417,335))#417,339  417,355
+    img.paste(w3,(278,336))#268,338  268,352
 
     idraw = ImageDraw.Draw(img)
     font = ImageFont.truetype("putches/Noto Sans Thai UI Bold_new.ttf",size=22)#23
